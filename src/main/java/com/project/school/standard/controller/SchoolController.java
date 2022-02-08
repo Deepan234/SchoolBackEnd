@@ -26,7 +26,7 @@ public class SchoolController {
 	ISchoolService service;
 
 	@PostMapping("/addschool")
-	public ResponseEntity<SchoolDto> AddSchool(@RequestBody School school){
+	public ResponseEntity<SchoolDto> addSchool(@RequestBody School school){
 		
 		SchoolDto schoolDto = service.addSchool(school);
 		return new ResponseEntity<SchoolDto>(schoolDto,HttpStatus.OK); 
