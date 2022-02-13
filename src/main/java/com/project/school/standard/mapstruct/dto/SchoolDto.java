@@ -11,7 +11,7 @@ public class SchoolDto {
 	
 	private String location;
 	
-	private int contactNo;
+	private String contactNo;
 	
 	private String distance;
 	
@@ -32,7 +32,7 @@ public class SchoolDto {
 		// TODO Auto-generated constructor stub
 	}
 
-	public SchoolDto(int id, String name, String about, String location, int contactNo, String distance, String emailId,
+	public SchoolDto(int id, String name, String about, String location, String contactNo, String distance, String emailId,
 			String free, String affilation, String rating, String website) {
 		super();
 		this.id = id;
@@ -80,11 +80,11 @@ public class SchoolDto {
 		this.location = location;
 	}
 
-	public int getContactNo() {
+	public String getContactNo() {
 		return contactNo;
 	}
 
-	public void setContactNo(int contactNo) {
+	public void setContactNo(String contactNo) {
 		this.contactNo = contactNo;
 	}
 

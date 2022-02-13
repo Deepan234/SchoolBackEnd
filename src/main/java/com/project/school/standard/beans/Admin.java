@@ -12,7 +12,6 @@ public class Admin {
 
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private String userName;
 	
 	@NotNull(message="Password should not left Null")
