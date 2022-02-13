@@ -36,14 +36,14 @@ public class SuggestionServiceImpl implements ISuggestionService {
 	@Override
 	public SuggestionsDto addSuggestions(Suggestions suggestions) {
 		// TODO Auto-generated method stub
-		List<School> schoolList = schoolRepo.findAll();
+//		List<School> schoolList = schoolRepo.findAll();
 		Suggestions suggestion = null;
-		List<String > schoolListString = schoolList.stream().map(School::getName).toList();
-		for (int i=0;i<schoolListString.size();i++) {
-			if(suggestions.getSchoolName().equalsIgnoreCase(schoolListString.get(i))) {
-				throw new SchoolNameMatchException("School Already Available in the list");
-			}
-		}
+//		List<String > schoolListString = schoolList.stream().map(School::getName).toList();
+//		for (int i=0;i<schoolListString.size();i++) {
+//			if(suggestions.getSchoolName().equalsIgnoreCase(schoolListString.get(i))) {
+//				throw new SchoolNameMatchException("School Already Available in the list");
+//			}
+//		}
 		if(suggestions.getName().equalsIgnoreCase(null)) {
 				throw new InvalidInputException("Name is not found");
 		}else {

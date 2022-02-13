@@ -29,14 +29,14 @@ public class SchoolServiceImpl implements ISchoolService {
 	@Override
 	public SchoolDto addSchool(School school) {
 		// TODO Auto-generated method stub
-		List<School> schoolList = schoolRepo.findAll();
-		List<String > schoolListString = schoolList.stream().map(School::getName).toList();
+//		List<School> schoolList = schoolRepo.findAll();
+//		List<String > schoolListString = schoolList.stream().map(School::getName).toList();
 		School schools = null;
-		for (int i=0;i<schoolListString.size();i++) {
-			if(school.getName().equalsIgnoreCase(schoolListString.get(i))) {
-				throw new SchoolNameMatchException("School Already Available in the list");
-			}
-		}
+//		for (int i=0;i<schoolListString.size();i++) {
+//			if(school.getName().equalsIgnoreCase(schoolListString.get(i))) {
+//				throw new SchoolNameMatchException("School Already Available in the list");
+//			}
+//		}
 		if(school.getName().equalsIgnoreCase(null)) {
 			throw new InvalidInputException("Name is not found");
 	}else {
