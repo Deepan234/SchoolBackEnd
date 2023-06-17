@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        gradle 'GRADLE_HOME'
+        gradle 'GRADLE'
     }
     stages {
         stage('Build') {
