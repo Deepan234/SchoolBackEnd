@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "gradle clean build"
+                bat "mvn clean install"
             }
         }   
     }
